@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Défilés de mode — Gucci Primavera</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="menu" aria-label="Menu principal">
+      <a class="menu-lien" href="../index.html">Accueil</a>
+      <a class="menu-lien actif" href="index.html" aria-current="page"
+        >Projet 1</a
+      >
+      <a class="menu-lien" href="../Projet-2/index.html">Projet 2</a>
+      <a class="menu-lien" href="../Projet-3/index.html">Projet 3</a>
+    </nav>
+
+    <main class="conteneur">
+      <section class="carte-defile">
+        <header class="entete">
+          <h1 class="titre">Gucci 1st by Demna</h1>
+          <p class="sous-titre">
+            Demna · Automne-Hiver 2026-2027 · Milan, 27 février 2026
+          </p>
+        </header>
+
+        <div class="visionneuse">
+          <button
+            id="fleche-gauche"
+            type="button"
+            class="fleche"
+            aria-label="Look précédent"
+          >
+            ←
+          </button>
+
+          <div class="cadre-photo">
+            <img
+              id="photo-principale"
+              src="1.jpg"
+              alt="Gucci Primavera, look 1"
+            />
+          </div>
+
+          <button
+            id="fleche-droite"
+            type="button"
+            class="fleche"
+            aria-label="Look suivant"
+          >
+            →
+          </button>
+        </div>
+
+        <p id="legende-look" class="legende-look">Look 1</p>
+
+        <div class="vignettes">
+          <img
+            class="vignette active"
+            src="1.jpg"
+            alt="Gucci Primavera, look 1"
+            data-nom="Look 1"
+          />
+          <img
+            class="vignette"
+            src="2.jpg"
+            alt="Gucci Primavera, look 2"
+            data-nom="Look 2"
+          />
+          <img
+            class="vignette"
+            src="3.jpg"
+            alt="Gucci Primavera, look 3"
+            data-nom="Look 3"
+          />
+          <img
+            class="vignette"
+            src="4.jpg"
+            alt="Gucci Primavera, look 4"
+            data-nom="Look 4"
+          />
+          <img
+            class="vignette"
+            src="5.jpg"
+            alt="Gucci Primavera, look 5"
+            data-nom="Look 5"
+          />
+        </div>
+
+        <div class="actions">
+          <button id="btn-favori" type="button" class="btn">
+            Ajouter aux favoris
+          </button>
+          <button id="btn-details" type="button" class="btn">
+            Voir les détails
+          </button>
+        </div>
+
+        <aside id="panneau-details" class="panneau-details hidden">
+          Premier défilé de Demna pour Gucci, présenté à Milan le 27 février
+          2026 (collection Automne-Hiver 2026-2027). Cette sélection montre 5
+          looks.
+        </aside>
+
+        <section class="favoris">
+          <h2 class="favoris-titre">Mes favoris</h2>
+          <output id="liste-favoris" class="liste-favoris"></output>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
